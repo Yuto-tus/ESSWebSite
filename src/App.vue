@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app :style="{ background: $vuetify.theme.themes.dark.background }">
+    <header>
+      <v-app-bar flat color="rgba(115, 98, 66, 0.0015)" height="70">
+        <v-toolbar-title>Kagura ESS</v-toolbar-title>
+        <v-spacer></v-spacer>
+          <v-toolbar-items>
+            <v-btn plain text to="/" >about</v-btn>
+            <v-btn plain text to="/event">event</v-btn>
+            <v-btn plain text to="/discussion">discussion</v-btn>
+            <v-btn plain text to="/speech" >speech</v-btn>
+            <v-btn plain text to="/guide">guide</v-btn>
+          </v-toolbar-items>
+      </v-app-bar>
+    </header>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+};
+</script>

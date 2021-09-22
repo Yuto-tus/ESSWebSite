@@ -1,4 +1,4 @@
-# essweb
+# vuetify-test
 
 ## Project setup
 ```
