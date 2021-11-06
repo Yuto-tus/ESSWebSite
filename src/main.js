@@ -9,8 +9,12 @@ import discussion from './components/discussion'
 import speech from './components/speech'
 import guide from './components/guide'
 
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
+
 Vue.config.productionTip = false
 Vue.use(VueRouter)
+Vue.use(VueAwesomeSwiper)
 
 const routes = [
   { path: '/', component: about },
